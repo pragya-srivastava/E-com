@@ -46,7 +46,7 @@ float:left
 }
 #first {
     color:#fff;
-    font-size:45px;
+    font-size:35px;
     font-weight:bold;
     margin-left:15px;
     font-family:cursive;
@@ -54,7 +54,7 @@ float:left
 }
 #second {
     color:#fff;
-    font-size:35px;
+    font-size:25px;
     font-weight:bold;
     font-family:cursive;
 
@@ -177,4 +177,24 @@ input[name="r"]{
 }
 #r5:checked ~ .s1{
   margin-left: -80%;
+}
+
+
+/*responsive*/
+@media screen and (max-width:960px) {
+  .service-box{
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .service-box{
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .service-box{
+    max-width: 100%;
+  }
 }
