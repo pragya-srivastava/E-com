@@ -62,13 +62,13 @@ float:left
 
 /*search area*/
 #search {
-    width:650px;
+    width:55%;
     float:left;
     padding:20px;
     margin-left:50px;
 }
 .search-area {
-    width:650px;
+    width:60%;
     height:30px;
     backface-visibility:#fff;
     border:none;
@@ -77,7 +77,7 @@ float:left
     padding-left:15px;
 }
 .search-btn {
-    width:100px;
+    width:15%;
     height:35px;
     border-radius:10px;
     border:none;
