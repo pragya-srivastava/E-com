@@ -251,6 +251,75 @@ input[name="r"]{
         transition:all .5s ease;
     }
 
+    /*category*/
+#heading {
+
+    width:100%;
+    height:auto;
+    float:left;
+    color:#0069a8;
+    font-size:22px;
+
+}
+
+    #heading h2 {
+        line-height:35px;
+      
+        padding-left:10px;
+    }
+    /*product style*/
+.pro-box{
+    width:235px;
+    height:235px;
+    overflow:hidden;
+    margin:0 100 30 0;
+    position: relative;
+    float:left;
+    margin-left:80px;
+    margin-bottom:30px;
+}
+    .pro-box > img {
+        max-height:100%;
+        max-width:100%;
+        height:100%;
+ }
+.pro-trans {
+    background:rgba(0,0,0,0.6);
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    position:absolute;
+    opacity:0;
+    transition:all .5s ease;
+}
+.pro-box:hover .pro-trans {
+   opacity:1;
+   transition:all .5s ease;
+}
+.pro-feature {
+    text-align:center;
+     margin-top:-150px;
+     transition:all .5s ease;
+}
+    .pro-feature p {
+        color:white;
+        font-family:Verdana;
+        }
+.pro-box:hover .pro-feature {
+    margin-top:150px;
+    transition:all .5s ease;
+}
+.pro-feature input {
+    width:150px;
+    height: 35px;
+    font-size:17px;
+    background:#0069a8;
+    color:white;
+}
+
 /*responsive*/
 @media screen and (max-width:960px) {
   .service-box{
