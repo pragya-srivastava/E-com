@@ -325,10 +325,11 @@ input[name="r"]{
     float:left;
 }
     .offer img {
-        width:420px;
-        height:250px;
+        width:320px;
+        height:200px;
         float:left;
         margin-top:10px;
+        margin-left:20px;
        
     }
     .offer:last-child {
