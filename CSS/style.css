@@ -3,7 +3,7 @@
 font-family:Tahoma;
 }
 .container {
-width:95%;
+width:100%;
 margin:0 auto;
 }
 
@@ -251,9 +251,8 @@ input[name="r"]{
         transition:all .5s ease;
     }
 
-    /*category*/
+    /*Product*/
 #heading {
-
     width:100%;
     height:auto;
     float:left;
@@ -319,6 +318,34 @@ input[name="r"]{
     background:#0069a8;
     color:white;
 }
+
+/*offer*/
+.offer {
+    width:400px;
+    float:left;
+}
+    .offer img {
+        width:420px;
+        height:250px;
+        float:left;
+        margin-top:10px;
+       
+    }
+    .offer:last-child {
+        margin-right:0px;
+    }
+
+    .off-box {
+    width:420px;
+    height:250px;
+    float:left;
+    overflow:hidden;
+    position:relative;
+    margin-left:10px;
+}
+     .off-box:hover img {
+        transform:scale(1.2,1.2);
+        transition:all .5s ease;
 
 /*responsive*/
 @media screen and (max-width:960px) {
