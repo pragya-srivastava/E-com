@@ -1,179 +1,135 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
-body {
-    background-color: #444442;
-    padding-top: 85px;
+	<meta charset="UTF-8">
+	<title> Contact us </title>
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-    font-family: 'Poppins', sans-serif, 'arial';
-    font-weight: 600;
-    font-size: 72px;
-    color: white;
+body{
+  background: url('images/bg4.png') no-repeat top center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 550px;
+  background: rgba(0,0,0,0.8);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.wrapper .title h1{
+  color: #c5ecfd;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-form{
+  display: flex;
+}
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields,
+.msg{
+  width: 48%;
+}
+
+.input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+
+.msg textarea{
+  height: 212px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #c5ecfd;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #c5ecfd;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #c5ecfd;
+}
+
+.btn {
+    background: #0069a8;
     text-align: center;
-}
-
-h4 {
-    font-family: 'Roboto', sans-serif, 'arial';
-    font-weight: 400;
-    font-size: 20px;
-    color: #9b9b9b;
-    line-height: 1.5;
-}
-
-/* ///// inputs /////*/
-
-input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
-    font-size: 0.75em;
-    color: #999;
-    top: -5px;
-    -webkit-transition: all 0.225s ease;
-    transition: all 0.225s ease;
-}
-
-.styled-input {
-    float: left;
-    width: 293px;
-    margin: 1rem 0;
-    position: relative;
-    border-radius: 4px;
-}
-
-@media only screen and (max-width: 768px){
-    .styled-input {
-        width:100%;
-    }
-}
-
-.styled-input label {
-    color: #999;
-    padding: 1.3rem 30px 1rem 30px;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    -webkit-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    pointer-events: none;
-}
-
-.styled-input.wide { 
-    width: 650px;
-    max-width: 100%;
-}
-
-input,
-textarea {
-    padding: 30px;
-    border: 0;
-    width: 100%;
-    font-size: 1rem;
-    background-color: #2d2d2d;
-    color: white;
-    border-radius: 4px;
-}
-
-input:focus,
-textarea:focus { outline: 0; }
-
-input:focus ~ span,
-textarea:focus ~ span {
-    width: 100%;
-    -webkit-transition: all 0.075s ease;
-    transition: all 0.075s ease;
-}
-
-textarea {
-    width: 100%;
-    min-height: 15em;
-}
-
-.input-container {
-    width: 650px;
-    max-width: 100%;
-    margin: 20px auto 25px auto;
-}
-
-.submit-btn {
-    float: right;
-    padding: 7px 35px;
-    border-radius: 60px;
-    display: inline-block;
-    background-color: #4b8cfb;
-    color: white;
-    font-size: 18px;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
     cursor: pointer;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
-              0 2px 10px 0 rgba(0,0,0,0.07);
-    -webkit-transition: all 300ms ease;
-    transition: all 300ms ease;
+    text-transform: uppercase;
 }
 
-.submit-btn:hover {
-    transform: translateY(1px);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
-              0 1px 1px 0 rgba(0,0,0,0.09);
-}
-
-@media (max-width: 768px) {
-    .submit-btn {
-        width:100%;
-        float: none;
-        text-align:center;
-    }
-}
-
-input[type=checkbox] + label {
-  color: #ccc;
-  font-style: italic;
-} 
-
-input[type=checkbox]:checked + label {
-  color: #f00;
-  font-style: normal;
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
 }
 
 </style>
-
 </head>
 <body>
-
-<div class="container">
-	<div class="row">
-			<h1>contact us</h1>
-	</div>
-	<div class="row">
-			<h4 style="text-align:center">We'd love to hear from you!</h4>
-	</div>
-	<div class="row input-container">
-			<div class="col-xs-12">
-				<div class="styled-input wide">
-					<input type="text" required />
-					<label>Name</label> 
-				</div>
-			</div>
-			<div class="col-md-6 col-sm-12">
-				<div class="styled-input">
-					<input type="text" required />
-					<label>Email</label> 
-				</div>
-			</div>
-			<div class="col-md-6 col-sm-12">
-				<div class="styled-input" style="float:right;">
-					<input type="text" required />
-					<label>Phone Number</label> 
-				</div>
-			</div>
-			<div class="col-xs-12">
-				<div class="styled-input wide">
-					<textarea required></textarea>
-					<label>Message</label>
-				</div>
-			</div>
-			<div class="col-xs-12">
-				<div class="btn-lrg submit-btn">Send Message</div>
-			</div>
-	</div>
+	
+<div class="wrapper">
+  <div class="title">
+    <h1>contact us</h1>
+      <p style="color:white; text-align:center;">We will get to you back soon</p>
+  </div>
+  <div class="contact-form">
+    <div class="input-fields">
+        <br /><br />
+      <input type="text" class="input" placeholder="Name">
+      <input type="text" class="input" placeholder="Email Address">
+      <input type="text" class="input" placeholder="Phone">
+      <input type="text" class="input" placeholder="Subject">
+    </div>
+      <br /><br />
+    <div class="msg">
+         <br /><br />
+      <textarea placeholder="Message"></textarea>
+      <div class="btn">send</div>
+    </div>
+  </div>
 </div>
+	
 </body>
 </html>
