@@ -69,13 +69,14 @@ float:left
 
 /*search area*/
 #search {
-    width:55%;
+    
     float:left;
     padding:20px;
-    margin-left:50px;
+    margin-left:20px;
+    width:650px;
 }
 .search-area {
-    width:60%;
+    width:650px;
     height:30px;
     backface-visibility:#fff;
     border:none;
@@ -95,13 +96,13 @@ float:left
 
 /*user menu*/
 #user-menu {
-    width:15%;
+    width:200px;
     float:right;
     margin-top:20px;   
 }
     #user-menu li {
         float:left;
-        width:45%;
+        width:80px;
         text-align:center;
         list-style:none;
          font-size:25px;
