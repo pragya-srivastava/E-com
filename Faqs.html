@@ -1,0 +1,352 @@
+<html>
+<head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  background: #fff;
+  line-height:26px;
+}
+
+h1 {
+ font-family: "Lato", sans-serif;
+font-weight: 700;
+font-style: normal;
+color: #0069a8;
+  font-size: 32px;
+  
+}
+
+
+.content {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  padding: 0 60px 0 0;
+}
+
+.centerplease {
+  margin: 0 auto;
+  max-width: 270px;
+  font-size: 40px;
+}
+
+.question {
+  color: #fff;
+  position: relative;
+  background: #0069a8;
+  margin: 0;
+  padding: 10px 10px 10px 50px;
+  display: block;
+  width:100%;
+  cursor: pointer;
+}
+
+.answers {
+  font-weight:300;
+  background: #f2f2f2;
+  padding: 0px 15px;
+  margin: 0px 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .7s ease;
+  -moz-transition: .7s ease;
+  -o-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.questions:checked ~ .answers{
+  height: auto;
+  opacity: 1;
+  padding: 15px;
+}
+
+.plus {
+  color:#fff;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 5px;
+  z-index: 5;
+  font-size: 2em;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.questions:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.questions {
+  display: none;
+}</style>
+</head>
+<body>
+
+<div class="content">
+<h1>FAQs</h1>
+  
+
+
+
+<!-- __________________________ SECTIONS ___________________________ --> 
+
+<h3>PURCHASE, ORDERING, & RETURNS</h3>
+
+<div>
+  <input type="checkbox" id="question11" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question11" class="question">
+   What is the "S&L" price?
+  </label>
+  <div class="answers">
+    <p>S&L means school/library.  Our school/library prices reflect a 30% discount off list prices.
+    </p>
+    
+  </div>
+</div>
+<!-- _____________________________________________________ --> 
+<div>
+  <input type="checkbox" id="question12" name="q" class="questions">
+  <div class="plus">+</div>
+  <label for="question12" class="question">
+How do I order Yayskool Education Products?
+  </label>
+  <div class="answers">
+    <p>You can order Yayskool education Products by mail, toll-free fax or telephone, and online through our cart or quick order portals.</p>
+    <p>
+      
+      By mail, please submit your order form (from a catalog, brochure, or PDF) or purchase order to:</p>
+    <p>
+      Yayskool <br />
+      C-2099/1 - Indra nagar<br>
+         Lucknow, - 226016<br />
+      Uttar Pradesh, India<br />
+         +91 22-123456<br />
+mail@yayskool.com<br />
+      Attention: Customer Service</p>
+    <p>
+      Place an order anytime through our toll-free fax at +91 22-123456. Please fax the order form or purchase order; be sure to include the billing and shipping addresses, item ISBNs, titles, quantity, price, shipping/handling, and tax (if applicable). Please include any special instructions or library processing requests.</p>
+    <p>
+      Please feel free to order toll-free via telephone between 9 AM and 5 PM, Eastern Standard Time, Monday through Friday at +91 22-123456.</p>
+    <p>
+     To order online, please select items for your cart and proceed to Checkout, or you can input ISBNs directly to create a quick order here.
+    </p>
+
+  </div>
+</div>
+ <!-- _____________________________________________________ -->  
+<div>
+  <input type="checkbox" id="question13" name="q" class="questions">
+  <div class="plus">+</div>
+  <label for="question13" class="question">
+How do I redeem coupons/discounts/online purchase bonuses?
+  </label>
+  <div class="answers">
+    <p>Yayskool Education is happy to redeem all coupons, price-reduction offers, online purchase bonuses, and special discounts. Please include any coupons or offers with mailed or faxed orders.</p>
+    <p>
+      
+      When placing your online order please follow instructions for coupon and bonus redemption. For any price-reduction offers and special discounts, please include these details within the comment section of the purchase portal.</p>
+    <p>
+      
+      You can also contact Customer Service at +91 22-123456 between 9 AM and 5 PM, EST, Monday through Friday to redeem offers.
+    </p>
+  </div>
+</div>
+<!-- _____________________________________________________ -->  
+<div>
+  <input type="checkbox" id="question14" name="q" class="questions">
+  <div class="plus">+</div>
+  <label for="question14" class="question">
+How long will it take for me to receive my order once it has been placed?
+  </label>
+  <div class="answers">
+    <p>Our standard shipping time is 7 to 10 business days from the receipt of your purchase order for in-stock items. If your order requires expedited delivery, please call Customer Service at +91 22-123456. </p>
+    
+  </div>
+</div>
+<!-- _____________________________________________________ -->  
+<div>
+  <input type="checkbox" id="question15" name="q" class="questions">
+  <div class="plus">+</div>
+  <label for="question15" class="question">
+What happens when an item is Out of Stock? Does that mean it will be backordered?
+  </label>
+  <div class="answers">
+    <p>Yayskool Educatio Product does its very best to keep everything in stock. If a product is temporarily out of stock, it will be backordered automatically and shipped immediately upon availability.</p>
+      
+     <p> At the time of placing your order (either via phone, fax, or online), please specify how you would wish to process backorders if they occur. </p>
+      <p>Selections include:<br />
+    <ul>
+  <li>Billing at the time of order processing or billing when the backordered item(s) ship</li>
+<li>Canceling an order if backorder status occurs, or creating a termination date when an order should be canceled if items still remain on backorder status on that date</li>
+</ul></p>
+  </div>
+</div>
+<!-- _____________________________________________________ -->  
+<div>
+  <input type="checkbox" id="question16" name="q" class="questions">
+  <div class="plus">+</div>
+  <label for="question16" class="question">
+What is your return policy?
+  </label>
+  <div class="answers">
+    <p>Our products are satisfaction guaranteed. If you are not completely satisfied with your purchase, please contact Customer Service within 30 days of delivery and we will gladly replace your products or credit your account.<br />
+We will accept returns on any material that is found to be unsatisfactory including improperly processed books, however, properly process books cannot be returned. Products must be returned within 60 days of purchase and must be accompanied by a copy of the invoice. </p>
+    
+  </div>
+</div>
+<!-- _____________________________________________________ --> 
+
+
+<!-- __________________________ SECTIONS ___________________________ --> 
+
+<h3>TAX &amp; SHIPPING</h3>
+
+<div>
+  <input type="checkbox" id="question17" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question17" class="question">
+Do you charge sales tax?
+  </label>
+  <div class="answers">
+    <p>We only apply taxes for states where applicable. </p>
+    
+  </div>
+</div>
+<!-- _____________________________________________________ --> 
+<div>
+  <input type="checkbox" id="question18" name="q" class="questions">
+  <div class="plus">+</div>
+  <label for="question18" class="question">
+What is the cost for shipping & handling?
+  </label>
+  <div class="answers">
+    <p>Shipping is FREE on all orders over Rs 1500.  </p>
+    <p>On orders less than Rs 1500, shipping charge is aplicable which is Rs 150.  </p>
+    <p>Additional shipping charges will be applied to all orders that are outside of the India. </p>
+  </div>
+</div>
+ <!-- _____________________________________________________ -->  
+
+
+
+<!-- __________________________ SECTIONS ___________________________ --> 
+
+<h3>DOMESTIC &amp; INTERNATIONAL SALES</h3>
+
+<div>
+  <input type="checkbox" id="question20" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question20" class="question">
+How can I find my local sales representative?
+  </label>
+  <div class="answers">
+    <p>Our Representatives—who are experts in making sure that your acquisition needs are met—can be located by calling Customer Service at +91 22-123456. </p>
+    
+  </div>
+</div>
+<!-- _____________________________________________________ --> 
+<div>
+  <input type="checkbox" id="question21" name="q" class="questions">
+  <div class="plus">+</div>
+  <label for="question21" class="question">
+How do I purchase books if I live outside of the India?
+  </label>
+  <div class="answers">
+    <p>Customer Service can help you directly with international purchases. Additional shipping charges will be added for international delivery. Please call Customer Service at +91 22-123456. </p>
+    
+  </div>
+</div>
+ <!-- _____________________________________________________ -->  
+<div>
+  <input type="checkbox" id="question22" name="q" class="questions">
+  <div class="plus">+</div>
+  <label for="question22" class="question">
+Do you have distributors outside of the India?
+  </label>
+  <div class="answers">
+    Yes we have distributors outside of the India.
+  </div>
+</div>
+ <!-- _____________________________________________________ -->  
+<div>
+  <input type="checkbox" id="question23" name="q" class="questions">
+  <div class="plus">+</div>
+  <label for="question23" class="question">
+How can I obtain a copy of your catalogs and brochures?
+  </label>
+  <div class="answers">
+    <p>We produce several catalogs and brochures, covering our full line across all divisions. To download any brochures and catalogs in PDF form, or to request delivery of any of our current materials, please click here. </p>
+    
+  </div>
+</div>
+<!-- _____________________________________________________ --> 
+
+
+<!-- __________________________ SECTIONS ___________________________ --> 
+
+<h3>CUSTOMER SERVICE</h3>
+
+<div>
+  <input type="checkbox" id="question24" name="q"  class="questions">
+  <div class="plus">+</div>
+  <label for="question24" class="question">
+What are your customer services?
+  </label>
+  <div class="answers">
+    <p>Our Customer Service Representatives are outstanding individuals who understand the importance of knowing you. Cavendish Square customer services are varied and flexible, depending upon your specific needs. If you need to view a sample or find out more about our books, collections, or other products in order to make an informed purchase, we’re ready to serve you.</p>
+    <p>
+      
+      Our Customer Service Representatives are available from 9 AM to 5 PM EST at +91 22-123456. <br />
+      
+       Yayskool <br />
+      C-2099/1 - Indra nagar<br>
+         Lucknow, - 226016<br />
+      Uttar Pradesh, India<br />
+        +91 22-123456<br />
+mail@yayskool.com
+    </p>
+  </div>
+</div>
+<!-- _____________________________________________________ --> 
+<div>
+  <input type="checkbox" id="question25" name="q" class="questions">
+  <div class="plus">+</div>
+  <label for="question25" class="question">
+May I submit a question for FAQ?
+  </label>
+  <div class="answers">
+    We would like your Yayskool Education Products experience to be as user-friendly as possible, please feel free to submit a FAQ for inclusion in this section.
+  </div>
+</div>
+ <!-- _____________________________________________________ -->  
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
